@@ -32,17 +32,37 @@ const ourTeam = [
     ruolo: "Chief Editor",
     foto: "angela-caroll-chief-editor.jpg",
   },
+  {
+    name: "Walter Gordon",
+    ruolo: "Office Manager",
+    foto: "walter-gordon-office-manager.jpg",
+  },
+  {
+    name: "Angela Lopez",
+    ruolo: "Social Media Manager",
+    foto: "angela-lopez-social-media-manager.jpg",
+  },
+  {
+    name: "Scott Estrada",
+    ruolo: "Developer",
+    foto: "scott-estrada-developer.jpg",
+  },
+  {
+    name: "Barbara Ramos",
+    ruolo: "Graphic Designer",
+    foto: "barbara-ramos-graphic-designer.jpg",
+  },
 ];
 
 for (let i = 0; i < ourTeam.length; i++) {
   const name = ourTeam[i].name;
   const ruolo = ourTeam[i].ruolo;
   const foto = ourTeam[i].foto;
-  wrap.innerHTML += `<div class="card" style="width: 18rem;">
+  wrap.innerHTML += `<div class="card col-3" >
   <img src="./img/${foto}" class="card-img-top" >
-  <div class="card-body">
-    <p class="card-text">${name}</p>
-    <p class="card-text">${ruolo}</p>
+  <div class="card-body  ">
+    <p class="card-text d-flex justify-content-center ">${name}</p>
+    <p class="card-text d-flex justify-content-center ">${ruolo}</p>
 
   </div>
 </div>`;
